@@ -20,8 +20,6 @@
 package com.peasenet.mods.render
 
 import com.peasenet.gavui.color.Colors
-import com.peasenet.mods.Mod
-import com.peasenet.mods.Type
 import com.peasenet.util.event.data.EntityRender
 import com.peasenet.util.listeners.EntityRenderNameListener
 import net.minecraft.client.font.TextRenderer.TextLayerType
@@ -76,16 +74,16 @@ class ModHealthTag : RenderMod(
         textRenderer.draw(text, h, 0f, color, false, matrix4f, er.vertexConsumers, TextLayerType.NORMAL, j, er.light)
         if (bl) {
             textRenderer.draw(
-                    text,
-                    h,
-                    0f,
-                    color,
-                    false,
-                    matrix4f,
-                    er.vertexConsumers,
-                    TextLayerType.NORMAL,
-                    0,
-                    er.light
+                text,
+                h,
+                0f,
+                color,
+                false,
+                matrix4f,
+                er.vertexConsumers,
+                TextLayerType.NORMAL,
+                0,
+                er.light
             )
         }
         matrices.pop()
